@@ -96,35 +96,35 @@
 
   ### Para crear una VPC y las subredes
 
-  Abra la consola de Amazon VPC en https://console.aws.amazon.com/vpc/.
+  1.  Abra la consola de Amazon VPC en https://console.aws.amazon.com/vpc/.
 
-  En la esquina superior derecha de la Consola de administración de AWS, elija la región en la que desea crear la VPC. En este ejemplo se utiliza la región EE.UU. Oeste (Oregón).
+  2.  En la esquina superior derecha de la Consola de administración de AWS, elija la región en la que desea crear la VPC. 
 
-  En la esquina superior izquierda, elija VPC Dashboard. Para comenzar a crear una VPC, elija Launch VPC Wizard (Lanzar asistente de VPC).
+  3.  En la esquina superior izquierda, elija VPC Dashboard. Para comenzar a crear una VPC, elija Launch VPC Wizard (Lanzar asistente de VPC).
 
-  En la página Step 1: Select a VPC Configuration, elija VPC with Public and Private Subnets y, a continuación, elija Select.
+  4.  En la página Step 1: Select a VPC Configuration, elija VPC with Public and Private Subnets y, a continuación, elija Select.
 
-  En la página Step 2: VPC with Public and Private Subnets, establezca estos valores:
+  5.  En la página Step 2: VPC with Public and Private Subnets, establezca estos valores:
 
-  IPv4 CIDR block: 10.0.0.0/16
+    IPv4 CIDR block: 10.0.0.0/16
 
-  IPv6 CIDR block: No IPv6 CIDR Block
+    IPv6 CIDR block: No IPv6 CIDR Block
 
-  VPC name: tutorial-vpc
+    VPC name: tutorial-vpc
 
-  Public subnet's IPv4 CIDR: 10.0.0.0/24
+    Public subnet's IPv4 CIDR: 10.0.0.0/24
 
-  Availability Zone: us-west-2a
+    Availability Zone: us-west-2a
 
-  Public subnet name: Tutorial public
+    Public subnet name: Tutorial public
 
-  Private subnet's IPv4 CIDR: 10.0.1.0/24
+    Private subnet's IPv4 CIDR: 10.0.1.0/24
 
-  Availability Zone: us-west-2a
+    Availability Zone: us-west-2a
 
-  Private subnet name: Tutorial Private 1
+    Private subnet name: Tutorial Private 1
 
-  Instance type: t2.small
+    Instance type: t2.small
 
   ### importante
   Si no ve el cuadro Instance type (Tipo de instancia) en la consola, elija Use a NAT instance instead (Usar una instancia NAT). Este enlace está a la derecha.
@@ -132,10 +132,10 @@
   ### nota
   Si no aparece el tipo de instancia t2.small, puede elegir un tipo de instancia diferente.
 
-  Key pair name: No key pair
+    Key pair name: No key pair
 
-  Service endpoints: omita este campo.
+    Service endpoints: omita este campo.
 
-  Enable DNS hostnames: Yes
+    Enable DNS hostnames: Yes
 
-  Hardware tenancy: Default
+    Hardware tenancy: Default
