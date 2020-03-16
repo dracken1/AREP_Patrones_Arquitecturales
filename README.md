@@ -14,6 +14,37 @@
   
 ## 2. Desplegar un formulario dinámico usando EC2
 
+  ### Lo primero es crear la instancia de EC2
+  
+  ### Paso 1: configurar e iniciar sesión en su cuenta de AWS
+  Inicie sesión en la consola de administración de AWS y configure su cuenta raíz.
+  ### Paso 2: Lanzar una instancia de Amazon EC2
+  En el panel de Amazon EC2, haga clic en "Launch Instance" (Lanzar instancia) para crear y configurar la máquina virtual.
+
+  ### Paso 3: Configurar su instancia
+  En este asistente tiene la opción de configurar las características de su instancia. A continuación se incluyen algunas instrucciones para configurar la primera instancia.
+
+  Seleccione una imagen de máquina de Amazon (AMI): en el paso 1 del asistente, recomendamos la AMI de Amazon Linux 2 (compatible con la capa gratuita).
+  Seleccione un tipo de instancia: en el paso 2 del asistente, recomendamos la t2.micro (compatible con la capa gratuita).
+  Grupo de seguridad: en el paso 6, tiene la opción de configurar su firewall virtual.
+  Implemente la instancia: en el paso 7, revise la configuración de su instancia y seleccione "Launch" (Iniciar).
+  Cree un par de claves: seleccione Create a new key pair (Crear nuevo par de claves) y asígnele un nombre. El archivo del par de claves (.pem) se descargará automáticamente. Guárdelo en un lugar seguro, ya que lo utilizaremos posteriormente para iniciar sesión en la instancia. Por último, haga clic en "Launch Instances" (Iniciar instancias) para finalizar el proceso de configuración.
+  Nota: El inicio de la instancia puede demorar unos minutos.
+
+  ### Paso 4: conectarse a la instancia
+  Una vez lanzada la instancia, puede conectarse a ella y utilizarla como lo haría con cualquier equipo que tuviera delante. Para conectarse desde la consola, siga los pasos que se detallan a continuación:
+
+  Seleccione la instancia EC2 que creó y haga clic en "Connect" (Conectar).
+  Seleccione "A Java SSH client directly from my browser" (Un cliente SSH de Java directamente desde mi navegador). Asegúrese de que Java esté instalado y habilitado.
+  Introduzca la ruta de la clave privada (como por ejemplo: C:\KeyPairs\my-key-pair.pem).
+  Seleccione "Launch SSH Client" (Iniciar cliente SSH).
+  Nota: También puede conectarse a través de SSH o PuTTY; haga clic aquí para obtener más información.
+
+  ### Paso 5: terminar instancias
+  Si bien puede empezar a utilizar Amazon EC2 de manera gratuita (más información), debe terminar las instancias para evitar que se apliquen cargos adicionales. La instancia EC2 y los datos asociados se eliminarán.
+
+  Seleccione la instancia EC2, elija "Actions" (Acciones), seleccione "Instance State" (Estado de la instancia) y "Terminate" (Terminar).
+
 ## 3. Enlazar el formulario a una base de datos relacional o no-relacional, para almacenar y traer los datos almacenados. Use servicios de base de datos de AWS.
 
 ## 4. Configurar un VPC para gestionar la seguridad y los permisos de acceso a sus servidores.
